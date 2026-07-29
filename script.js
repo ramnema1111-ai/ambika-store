@@ -149,3 +149,71 @@ msg+=`%0A💰 Grand Total : ₹${total}`;
 window.open("https://wa.me/918904523601?text="+msg);
 
 };
+const cartButton=document.querySelector(".cart");
+
+const cartPanel=document.getElementById("cartPanel");
+
+const closeCart=document.getElementById("closeCart");
+
+cartButton.onclick=function(){
+
+cartPanel.classList.add("open");
+
+}
+
+closeCart.onclick=function(){
+
+cartPanel.classList.remove("open");
+
+}
+
+function updateCart(){
+
+let total=0;
+
+let count=0;
+
+cartItems.innerHTML="";
+
+products.forEach(product=>{
+
+const qty=cart[product.id]||0;
+
+if(qty>0){
+
+const amount=qty*product.price;
+
+count+=qty;
+
+total+=amount;
+
+cartItems.innerHTML+=`
+
+<div style="margin-bottom:18px">
+
+<b>${product.name}</b>
+
+<br>
+
+${qty} × ₹${product.price}
+
+=
+
+<b>₹${amount}</b>
+
+</div>
+
+`;
+
+}
+
+});
+
+document.getElementById("cartCount").innerText=count;
+
+document.getElementById("subtotal").innerText="₹"+total;
+
+document.getElementById("total").innerText="₹"+total;
+
+}
+
