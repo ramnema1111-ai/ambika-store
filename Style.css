@@ -360,3 +360,56 @@ width:100%;
 }
 
 }
+/* HERO SLIDER */
+
+.hero{
+padding:20px;
+background:#fff;
+}
+
+.hero-slider{
+position:relative;
+height:320px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.hero-slide{
+display:none;
+height:320px;
+background:linear-gradient(135deg,#ff6f00,#ff9800);
+color:white;
+padding:50px;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-slide.active{
+display:flex;
+}
+
+.hero-text h1{
+font-size:46px;
+margin-bottom:15px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.shop-btn{
+padding:14px 30px;
+background:white;
+color:#ff6f00;
+border:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.shop-btn:hover{
+background:#fff3e0;
+}
