@@ -59,24 +59,36 @@
 <div id="products" class="products"></div>
 
 </section>
-
-<!-- Shopping Cart -->
-
 <div id="cartPanel" class="cart-panel">
 
-<h2>Your Cart</h2>
+<div class="cart-header">
+
+<h2>🛒 Your Cart</h2>
+
+<button id="closeCart">✖</button>
+
+</div>
 
 <div id="cartItems"></div>
 
+<div class="bill">
+
+<p>Subtotal <span id="subtotal">₹0</span></p>
+
+<p>Delivery <span>₹0</span></p>
+
 <hr>
 
-<h3>Total : ₹<span id="total">0</span></h3>
+<h2>Total <span id="total">₹0</span></h2>
 
 <button id="checkout">
-Checkout on WhatsApp
+Proceed to WhatsApp
 </button>
 
 </div>
+
+</div>
+
 
 <script src="script.js"></script>
 
