@@ -1,45 +1,692 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Ambika General Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ambika Store | Fresh Groceries</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5fff5;
+color:#222;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0b8f3a;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:white;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffe600;
+}
+
+.hero{
+
+margin-top:80px;
+height:90vh;
+
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+
+max-width:700px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+margin-bottom:30px;
+line-height:1.7;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#13b14a;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+margin:10px;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#ffe600;
+color:black;
+transform:scale(1.05);
+
+}
+
+.search{
+
+margin-top:30px;
+
+}
+
+.search input{
+
+width:80%;
+max-width:500px;
+padding:15px;
+border:none;
+border-radius:40px;
+font-size:18px;
+
+}
+
+.delivery{
+
+background:#13b14a;
+padding:20px;
+text-align:center;
+color:white;
+font-size:24px;
+font-weight:bold;
+
+}
+
+.whatsapp{
+
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:10px;
+
+}
+
+nav a{
+
+margin:8px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+
 </head>
-<body style="font-family:Arial;text-align:center;background:#f5f5f5;">
 
-<h1 style="color:green;">🛒 Ambika General Store</h1>
+<body>
 
-<h2>Fresh Groceries at Best Prices</h2>
+<header>
 
-<p><b>📍 Address:</b><br>
-Opposite Court, Gangavathi Road,<br>
-Sindhanur, Karnataka
-</p>
+<div class="logo">
+🛒 Ambika Store
+</div>
 
-<p><b>📞 Phone:</b> 8904523601</p>
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Products</a>
+
+<a href="#">Offers</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fresh Groceries Delivered To Your Door</h1>
 
 <p>
-<a href="https://wa.me/918904523601">
-<button style="padding:15px;background:green;color:white;border:none;font-size:18px;">
-Order on WhatsApp
-</button>
+
+Quality Products • Best Prices • Free Home Delivery
+
+</p>
+
+<a class="btn" href="tel:8904523601">
+
+📞 Call Now
+
+</a>
+
+<a class="btn"
+
+href="https://wa.me/918904523601">
+
+💬 WhatsApp
+
+</a>
+
+<div class="search">
+
+<input
+
+type="text"
+
+placeholder="Search products...">
+
+</div>
+
+</div>
+
+</section>
+
+<div class="delivery">
+
+🚚 Free Home Delivery Available
+
+</div>
+
+<a class="whatsapp"
+
+href="https://wa.me/918904523601">
+
+💬
+
+</a>
+<!-- PRODUCT CATEGORIES -->
+
+<section style="padding:60px 20px;background:#fff;">
+
+<h2 style="text-align:center;font-size:38px;color:#0b8f3a;margin-bottom:40px;">
+🛍 Shop by Category
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:25px;max-width:1200px;margin:auto;">
+
+<div class="card">🌾<h3>Rice & Grains</h3></div>
+<div class="card">🥖<h3>Atta & Flour</h3></div>
+<div class="card">🛢<h3>Edible Oils</h3></div>
+<div class="card">🫘<h3>Dals & Pulses</h3></div>
+<div class="card">🌶<h3>Spices</h3></div>
+<div class="card">🥜<h3>Dry Fruits</h3></div>
+<div class="card">🍪<h3>Biscuits & Snacks</h3></div>
+<div class="card">🥛<h3>Dairy Products</h3></div>
+<div class="card">🥤<h3>Beverages</h3></div>
+<div class="card">🧴<h3>Personal Care</h3></div>
+<div class="card">🧹<h3>Household Items</h3></div>
+<div class="card">🍫<h3>Chocolates</h3></div>
+
+</div>
+
+</section>
+
+<style>
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+font-size:45px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
+cursor:pointer;
+}
+
+.card h3{
+margin-top:15px;
+font-size:20px;
+color:#222;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#13b14a;
+color:white;
+}
+
+.card:hover h3{
+color:white;
+}
+
+</style>
+<!-- OFFERS SECTION -->
+
+<section style="padding:70px 20px;background:#eefcf1;">
+
+<h2 style="text-align:center;font-size:38px;color:#0b8f3a;margin-bottom:40px;">
+🔥 Today's Offers
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;max-width:1200px;margin:auto;">
+
+<div class="offer-card">
+<h3>🌾 Rice Collection</h3>
+<p>Premium quality rice at affordable prices.</p>
+</div>
+
+<div class="offer-card">
+<h3>🛢️ Cooking Oil</h3>
+<p>Best brands available every day.</p>
+</div>
+
+<div class="offer-card">
+<h3>🍪 Snacks & Biscuits</h3>
+<p>Family packs and daily fresh stock.</p>
+</div>
+
+<div class="offer-card">
+<h3>🥜 Dry Fruits</h3>
+<p>Fresh almonds, cashews, raisins & more.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section style="padding:70px 20px;background:white;">
+
+<h2 style="text-align:center;font-size:38px;color:#0b8f3a;margin-bottom:50px;">
+⭐ Why Choose Ambika Store?
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;max-width:1200px;margin:auto;">
+
+<div class="feature-box">
+🚚
+<h3>Free Home Delivery</h3>
+<p>Fast delivery to nearby areas.</p>
+</div>
+
+<div class="feature-box">
+💰
+<h3>Best Prices</h3>
+<p>Affordable prices every day.</p>
+</div>
+
+<div class="feature-box">
+🥇
+<h3>Quality Products</h3>
+<p>Fresh and trusted grocery items.</p>
+</div>
+
+<div class="feature-box">
+😊
+<h3>Friendly Service</h3>
+<p>Customer satisfaction is our priority.</p>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.offer-card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.offer-card:hover{
+transform:translateY(-8px);
+background:#13b14a;
+color:white;
+}
+
+.feature-box{
+background:#f8fff8;
+padding:30px;
+border-radius:18px;
+text-align:center;
+font-size:45px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.feature-box h3{
+font-size:22px;
+margin:15px 0;
+color:#0b8f3a;
+}
+
+.feature-box p{
+font-size:16px;
+}
+
+.feature-box:hover{
+transform:scale(1.05);
+background:#13b14a;
+color:white;
+}
+
+.feature-box:hover h3{
+color:white;
+}
+
+</style>
+<!-- CUSTOMER REVIEWS -->
+
+<section style="padding:60px 20px;background:#f8f8f8;text-align:center;">
+
+<h2 style="color:#0b8f3a;">⭐ Customer Reviews</h2>
+
+<div style="max-width:900px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+
+<div style="background:white;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);">
+⭐⭐⭐⭐⭐
+<p>"Best grocery shop in Sindhanur. Good quality products."</p>
+<b>- Happy Customer</b>
+</div>
+
+<div style="background:white;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);">
+⭐⭐⭐⭐⭐
+<p>"Fast home delivery and reasonable prices."</p>
+<b>- Local Customer</b>
+</div>
+
+<div style="background:white;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);">
+⭐⭐⭐⭐⭐
+<p>"Friendly service and fresh groceries."</p>
+<b>- Regular Customer</b>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section style="padding:60px 20px;background:#13b14a;color:white;text-align:center;">
+
+<h2>📍 Contact Us</h2>
+
+<p><b>🏪 Ambika Store</b></p>
+
+<p>📍 Opposite Court, Gangavathi Road,<br>Sindhanur, Karnataka</p>
+
+<p>📞 +91 8904523601</p>
+
+<p>
+<a href="tel:+918904523601"
+style="display:inline-block;background:white;color:#13b14a;padding:15px 30px;border-radius:40px;text-decoration:none;font-weight:bold;margin:10px;">
+📞 Call Now
 </a>
 </p>
 
-<h3>Our Products</h3>
-
 <p>
-🌾 Rice<br>
-🌾 Atta & Flour<br>
-🛢️ Edible Oil<br>
-🫘 Dals & Pulses<br>
-🌶️ Spices<br>
-🥜 Dry Fruits<br>
-🍪 Snacks<br>
-🧼 Household Items
+<a href="https://wa.me/918904523601"
+style="display:inline-block;background:#25D366;color:white;padding:15px 30px;border-radius:40px;text-decoration:none;font-weight:bold;margin:10px;">
+💬 WhatsApp Order
+</a>
 </p>
 
-<hr>
+<!-- QR CODE -->
 
-<p>© 2026 Ambika General Store</p>
+<h2 style="margin-top:50px;">📍 Scan QR Code</h2>
 
-</body>
-</html>
+<img src="YOUR_QR_IMAGE_LINK_HERE"
+style="width:220px;border-radius:12px;">
+
+<p>Scan to open our location.</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer style="background:#0b8f3a;color:white;text-align:center;padding:25px;">
+
+<p>© 2026 Ambika Store. All Rights Reserved.</p>
+
+</footer>
+<!-- PRODUCT GALLERY -->
+
+<section style="padding:70px 20px;background:#ffffff;">
+
+<h2 style="text-align:center;font-size:40px;color:#0b8f3a;">
+🛒 Featured Products
+</h2>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;">
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400">
+<h3>Premium Rice</h3>
+<p>High Quality Rice</p>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1603046891744-76e6300f5f19?w=400">
+<h3>Cooking Oil</h3>
+<p>Best Brands</p>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400">
+<h3>Fresh Spices</h3>
+<p>Pure & Fresh</p>
+</div>
+
+<div class="product-card">
+<img src="
+  <!-- PREMIUM HEADER -->
+
+<header style="
+background:#0b8f3a;
+padding:18px;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 4px 15px rgba(0,0,0,.2);
+">
+
+<div style="
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+">
+
+<h2 style="color:white;margin:0;">
+🛒 Ambika Store
+</h2>
+
+<div>
+
+<a href="tel:+918904523601"
+style="
+color:white;
+text-decoration:none;
+margin-right:20px;
+font-size:22px;
+">
+📞
+</a>
+
+<a href="https://wa.me/918904523601"
+style="
+color:white;
+text-decoration:none;
+font-size:22px;
+">
+💬
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- SEARCH -->
+
+<section style="padding:30px;background:#f4fff5;">
+
+<div style="max-width:900px;margin:auto;">
+
+<input
+type="text"
+placeholder="🔍 Search Products..."
+style="
+width:100%;
+padding:18px;
+font-size:18px;
+border-radius:40px;
+border:2px solid #13b14a;
+outline:none;
+">
+
+</div>
+
+</section>
+
+<!-- CATEGORIES -->
+
+<section style="padding:40px;">
+
+<h2 style="
+text-align:center;
+color:#0b8f3a;
+margin-bottom:35px;
+">
+Shop by Category
+</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+">
+
+<div class="cat">🌾<br>Rice</div>
+<div class="cat">🥣<br>Atta</div>
+<div class="cat">🛢️<br>Oil</div>
+<div class="cat">🌶️<br>Spices</div>
+<div class="cat">🥜<br>Dry Fruits</div>
+<div class="cat">🍪<br>Snacks</div>
+<div class="cat">🧴<br>Soap</div>
+<div class="cat">🪥<br>Toothpaste</div>
+<div class="cat">🧺<br>Cleaning</div>
+<div class="cat">🍬<br>Chocolates</div>
+<div class="cat">🥤<br>Soft Drinks</div>
+<div class="cat">🥛<br>Dairy</div>
+
+</div>
+
+</section>
+
+<style>
+
+.cat{
+background:white;
+padding:25px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
+cursor:pointer;
+}
+
+.cat:hover{
+background:#13b14a;
+color:white;
+transform:translateY(-8px);
+}
+
+</style>
