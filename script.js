@@ -216,4 +216,25 @@ document.getElementById("subtotal").innerText="₹"+total;
 document.getElementById("total").innerText="₹"+total;
 
 }
+/* Hero Slider */
+
+const heroSlides=document.querySelectorAll(".hero-slide");
+
+let currentSlide=0;
+
+setInterval(()=>{
+
+heroSlides[currentSlide].classList.remove("active");
+
+currentSlide++;
+
+if(currentSlide>=heroSlides.length){
+
+currentSlide=0;
+
+}
+
+heroSlides[currentSlide].classList.add("active");
+
+},4000);
 
