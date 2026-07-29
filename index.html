@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Ambika Store</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+🛒 Ambika Store
+</div>
+
+<div class="search-box">
+<input id="search" type="text" placeholder="Search products...">
+</div>
+
+<div class="cart">
+🛍️ <span id="cartCount">0</span>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome to Ambika Store</h1>
+
+<p>Your Trusted Grocery Store</p>
+
+</section>
+
+<section>
+
+<h2 class="title">All Products</h2>
+
+<div id="products" class="products"></div>
+
+</section>
+
+<!-- Shopping Cart -->
+
+<div id="cartPanel" class="cart-panel">
+
+<h2>Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<hr>
+
+<h3>Total : ₹<span id="total">0</span></h3>
+
+<button id="checkout">
+Checkout on WhatsApp
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
