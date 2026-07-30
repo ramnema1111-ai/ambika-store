@@ -1,1 +1,258 @@
+/* ==========================
+   AMBIKA STORE
+========================== */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 20px;
+background:#FF6F00;
+color:#fff;
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+}
+
+.search{
+flex:1;
+margin:0 20px;
+}
+
+.search input{
+width:100%;
+padding:12px 16px;
+border:none;
+border-radius:30px;
+outline:none;
+font-size:16px;
+}
+
+.cart-icon{
+position:relative;
+font-size:28px;
+cursor:pointer;
+}
+
+#cartCount{
+position:absolute;
+top:-8px;
+right:-10px;
+background:red;
+color:white;
+width:20px;
+height:20px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:12px;
+}
+
+/* BANNER */
+
+.banner{
+background:linear-gradient(135deg,#FF6F00,#FFA726);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.banner h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.banner p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.banner button{
+background:white;
+color:#FF6F00;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+}
+
+/* CATEGORIES */
+
+.categories{
+display:flex;
+gap:10px;
+overflow-x:auto;
+padding:15px;
+background:white;
+}
+
+.categories button{
+border:none;
+background:#eeeeee;
+padding:10px 20px;
+border-radius:20px;
+font-weight:600;
+cursor:pointer;
+white-space:nowrap;
+}
+
+.categories button:first-child{
+background:#FF6F00;
+color:white;
+}
+
+/* TITLE */
+
+.title{
+padding:20px;
+font-size:32px;
+color:#FF6F00;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
+padding:20px;
+}
+
+.product{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-5px);
+}
+
+.product img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.product-info{
+padding:15px;
+}
+
+.product-info h3{
+font-size:18px;
+margin-bottom:8px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#FF6F00;
+margin:10px 0;
+}
+
+.qty-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:15px;
+}
+
+.qty-btn{
+width:35px;
+height:35px;
+border:none;
+border-radius:50%;
+background:#FF6F00;
+color:white;
+font-size:20px;
+cursor:pointer;
+}
+
+.qty{
+font-size:18px;
+font-weight:bold;
+}
+
+/* CART */
+
+#cartPanel{
+position:fixed;
+right:0;
+top:0;
+width:360px;
+height:100vh;
+background:white;
+padding:20px;
+box-shadow:-5px 0 15px rgba(0,0,0,.15);
+overflow-y:auto;
+}
+
+#cartPanel h2{
+color:#FF6F00;
+margin-bottom:20px;
+}
+
+#checkout{
+width:100%;
+padding:15px;
+margin-top:20px;
+border:none;
+border-radius:10px;
+background:#25D366;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.search{
+width:100%;
+margin:0;
+}
+
+.banner h1{
+font-size:30px;
+}
+
+.products{
+grid-template-columns:repeat(2,1fr);
+}
+
+#cartPanel{
+width:100%;
+}
+
+}
